@@ -169,6 +169,7 @@ def main():
 
 def main_menu():
     clock = pygame.time.Clock()
+
     run = True
 
     while run:
