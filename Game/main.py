@@ -145,6 +145,7 @@ def draw_grid(snake):
     WIN.blit(text_surface, (365, 6))
 
 
+
 def main():
     clock = pygame.time.Clock()
     snake = Snake()
