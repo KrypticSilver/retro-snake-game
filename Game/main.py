@@ -105,7 +105,7 @@ def handle_movement(keys_pressed, snake):
     snake.body[0].pos = (snake.body[0].pos[0] + snake.body[0].dir_x * SPAN, snake.body[0].pos[1]
                          + snake.body[0].dir_y * SPAN)
 
-    if snake.body[0].pos[0] < 0 or snake.body[0].pos[0] + SPAN > WIDTH or snake.body[0].pos[1] < SPAN\
+    if snake.body[0].pos[0] < 0 or snake.body[0].pos[0] + SPAN > WIDTH or snake.body[0].pos[1] < SPAN \
             or snake.body[0].pos[1] + SPAN > WIDTH:
         del snake
         Cube.cube_nums = 0
@@ -145,7 +145,6 @@ def draw_grid(snake):
     WIN.blit(text_surface, (365, 6))
 
 
-
 def main():
     clock = pygame.time.Clock()
     snake = Snake()
@@ -165,9 +164,6 @@ def main():
         draw_grid(snake)
 
         pygame.display.update()
-
-
-
 
 
 def main_menu():
